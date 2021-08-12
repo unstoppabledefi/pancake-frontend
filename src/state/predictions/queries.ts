@@ -68,7 +68,6 @@ export interface RoundResponse {
   closeRoundId: string
   totalBets: string
   totalAmount: string
-  totalAmountTreasury: string
   bullBets: string
   bullAmount: string
   bearBets: string
@@ -108,7 +107,6 @@ export const getRoundBaseFields = () => `
   closeRoundId
   totalBets
   totalAmount
-  totalAmountTreasury
   bullBets
   bullAmount
   bearBets
