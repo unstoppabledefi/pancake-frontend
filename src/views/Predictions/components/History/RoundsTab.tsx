@@ -16,7 +16,7 @@ const RoundsTab: React.FC<RoundsTabProps> = ({ hasBetHistory, bets }) => {
   return hasBetHistory ? (
     <>
       {orderBy(bets, ['round.epoch'], ['desc']).map((bet) => (
-        <HistoricalBet key={bet.id} bet={bet} />
+        <HistoricalBet key={bet.round.epoch} bet={bet} />
       ))}
     </>
   ) : (
