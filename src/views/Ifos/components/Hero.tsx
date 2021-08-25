@@ -19,7 +19,7 @@ const StyledHero = styled.div`
 `
 
 const CurtainBottom = styled.div`
-  background-image: url('/images/curtain-bottom-${({ theme }) => (theme.isDark ? 'dark' : 'light')}.png');
+  background-image: url('./images/curtain-bottom-${({ theme }) => (theme.isDark ? 'dark' : 'light')}.png');
   background-repeat: repeat-x;
   background-size: contain;
   height: 20px;

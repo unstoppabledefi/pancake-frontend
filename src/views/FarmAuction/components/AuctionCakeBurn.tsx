@@ -53,7 +53,7 @@ const AuctionCakeBurn: React.FC = () => {
       </Flex>
       <Flex flex="1" alignSelf="center">
         <Box width="350px">
-          <Image width={350} height={320} src="/images/burnt-cake.png" alt={t('Burnt CAKE')} />
+          <Image width={350} height={320} src="./images/burnt-cake.png" alt={t('Burnt CAKE')} />
         </Box>
       </Flex>
     </Flex>
