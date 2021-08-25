@@ -43,7 +43,7 @@ const Team: React.FC = () => {
                   name="teams-selection"
                   value={team.id}
                   isChecked={currentTeamId === team.id}
-                  image={`/images/teams/${team.images.md}`}
+                  image={`./images/teams/${team.images.md}`}
                   onChange={handleTeamSelection}
                   disabled={!team.isJoinable}
                 >
