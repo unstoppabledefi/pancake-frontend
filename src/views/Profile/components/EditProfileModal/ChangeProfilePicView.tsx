@@ -76,7 +76,7 @@ const ChangeProfilePicPage: React.FC<ChangeProfilePicPageProps> = ({ onDismiss }
               name="profilePicture"
               key={walletNft.identifier}
               value={firstTokenId}
-              image={`/images/nfts/${walletNft.images.md}`}
+              image={`./images/nfts/${walletNft.images.md}`}
               isChecked={firstTokenId === selectedNft.tokenId}
               onChange={handleChange}
               disabled={isApproving || isConfirming || isConfirmed}

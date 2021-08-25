@@ -1,5 +1,5 @@
 import React, { lazy } from 'react'
-import { Router, Redirect, Route, Switch } from 'react-router-dom'
+import { HashRouter as Router, Redirect, Route, Switch } from 'react-router-dom'
 import { ResetCSS } from '@pancakeswap/uikit'
 import BigNumber from 'bignumber.js'
 import useEagerConnect from 'hooks/useEagerConnect'
@@ -13,7 +13,6 @@ import SuspenseWithChunkError from './components/SuspenseWithChunkError'
 import { ToastListener } from './contexts/ToastsContext'
 import PageLoader from './components/Loader/PageLoader'
 import EasterEgg from './components/EasterEgg'
-import history from './routerHistory'
 // Views included in the main bundle
 import Pools from './views/Pools'
 import Swap from './views/Swap'
@@ -61,7 +60,7 @@ const App: React.FC = () => {
   usePollCoreFarmData()
 
   return (
-    <Router history={history}>
+    <Router>
       <ResetCSS />
       <GlobalStyle />
       <GlobalCheckClaimStatus excludeLocations={['/collectibles']} />

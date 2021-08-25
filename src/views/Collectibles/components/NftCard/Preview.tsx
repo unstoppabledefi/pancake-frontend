@@ -33,7 +33,7 @@ const StyledVideo = styled.video`
 
 const Preview: React.FC<PreviewProps> = ({ nft, isOwned = false }) => {
   const { images, name, video } = nft
-  const previewImageSrc = `/images/nfts/${images.lg}`
+  const previewImageSrc = `./images/nfts/${images.lg}`
 
   if (video) {
     const videoComponent = (

@@ -15,7 +15,7 @@ const PreviewImage = styled.img`
 const CollectibleCard: React.FC<CollectibleCardProps> = ({ nft }) => {
   return (
     <div>
-      <PreviewImage src={`/images/nfts/${nft.images.lg}`} />
+      <PreviewImage src={`./images/nfts/${nft.images.lg}`} />
       <Text bold mb="8px">
         {nft.name}
       </Text>
