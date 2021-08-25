@@ -31,7 +31,7 @@ const AchievementAvatar: React.FC<AchievementAvatarProps> = ({ badge, ...props }
     return <NoBadgePlaceholder />
   }
 
-  return <StyledAchievementAvatar src={`/images/achievements/${badge}`} alt="achievement badge" {...props} />
+  return <StyledAchievementAvatar src={`./images/achievements/${badge}`} alt="achievement badge" {...props} />
 }
 
 export default AchievementAvatar
